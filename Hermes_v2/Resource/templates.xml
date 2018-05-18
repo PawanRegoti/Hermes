@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <template name="Vagtindkaldelse"  releaseType="Common">
+    <location value="NLP, Ballerup"/>
+    <subject value="Deploy vagt [REL]"/>
+    <body>
+Se https://wikirubicon.edlund.dk/NLP.Historical_releases.ashx for oversigt over, hvad der deployes.
+Se https://wikirubicon.edlund.dk/NLP.On-call-duty-for-deployment.ashx for praktisk beskrivelse af vagt-ordningen."</body>
+    <start value="7:00"/>
+    <duration value="0"/>
+    <reminder value ="18" />
+    <deltaTime value="0" />
+    <recipients value="" />
+  </template>
+  <template name="Byggeindkaldelse"  releaseType="Common">
+    <location value="NLP, Ballerup"/>
+    <subject value="Bygge [REL]"/>
+    <body>
+Se https://wikirubicon.edlund.dk/NLP.Building-hotfix-delivery-for-version-0-X.ashx for beskrivelse af at bygge releasen.
+Se https://wikirubicon.edlund.dk/NLP.Historical_releases.ashx for oversigt over alle releases"</body>
+    <start value="0:00"/>
+    <duration value="-1"/>
+    <reminder value="12" />
+    <deltaTime value="0" />
+    <recipients value="" />
+  </template>
+  <template name="Byggedokumentation"  releaseType="Common">
+    <location value="NLP, Ballerup"/>
+    <subject value="Sende dokumentation for [REL]"/>
+    <body>https://wikirubicon.edlund.dk/NLP.Documentation-for-deliveries.ashx?NoRedirect=1#_Procedure_&amp;amp;NS=NLP</body>
+    <start value="10:00"/>
+    <duration value="0"/>
+    <reminder value="0" />
+    <deltaTime value="-1" />
+    <recipients value="" />
+  </template>
+  <template name="Kodefrysindkaldelse prototype"  releaseType="Prototype">
+    <location value="NLP, Ballerup"/>
+    <subject value="Prototype [REL] code freeze"/>
+    <body>
+All new functionality and corrections for reported errors must be pushed to the development branch before code freeze.
+Please pay attention to the push-policy as described in: https://wikirubicon.edlund.dk/NLP.Push-policy.ashx
+Please refer to the wiki page for the specific branch: https://wikirubicon.edlund.dk/NLP.Historical_releases.ashx
+However, bug fixes for errors caused by new code may be allowed until build time, but only after agreement with Søren or Jens-Peder.
+    </body>
+    <start value="9:00"/>
+    <duration value="0"/>
+    <reminder value="-1" />
+    <deltaTime value="0" />
+    <recipients value="nlpgruppen@edlund.dk; Prashant.Patil@lntinfotech.com; Sanket.Shah2@lntinfotech.com" />
+  </template>
+  <template name="Kodefrysindkaldelse hotfix"  releaseType="Hotfix">
+    <location value="NLP, Ballerup"/>
+    <subject value="Hotfix [REL] code freeze"/>
+    <body>
+The hotfix will only contain bug-fixes that have been pushed to the hotfix branch before the code freeze.
+Please pay attention to the push-policy as described in: https://wikirubicon.edlund.dk/NLP.Push-policy.ashx
+Please refer to the wiki page for the specific branch: https://wikirubicon.edlund.dk/NLP.Historical_releases.ashx
+    </body>
+    <start value="9:00"/>
+    <duration value="0"/>
+    <reminder value="-1" />
+    <deltaTime value="0" />
+    <recipients value="nlpgruppen@edlund.dk; Prashant.Patil@lntinfotech.com; Sanket.Shah2@lntinfotech.com" />
+  </template>
+  <template name="Dokumentationsindkaldelse prototype"  releaseType="Prototype">
+    <location value="NLP, Ballerup"/>
+    <subject value="Deadline for documentation for [REL]"/>
+    <body>
+      Remember to fill out any relevant information about packages, change requests or webservices included in the upcoming release.
+
+      See https://wikirubicon.edlund.dk/NLP.Implementation-comments-and-prototype-notes.ashx for a description on what to write in the release notes.
+
+      Also make sure, that any manual steps needed to install or setup the application are described in release notes and/or installation guide.
+
+      Prototype notes folder: https://nordealivogpension.edlund.dk/Coauthor%20Documents/Prototype%20Notes
+      Implementation comments folder: https://nordealivogpension.edlund.dk/Shared%20Documents/Designspecifikationer/30%20Implementation%20comments
+      Installation guides folder:https://nordealivogpension.edlund.dk/Shared%20Documents/Installation%20Guides"
+      Changes after deadline must also be sent to nlp.baselining@edlund.dk.
+    </body>
+    <start value="14:00"/>
+    <duration value="0"/>
+    <reminder value="-3" />
+    <deltaTime value="-2" />
+    <recipients value="nlpgruppen@edlund.dk; Prashant.Patil@lntinfotech.com; Sanket.Shah2@lntinfotech.com" />
+  </template>
+  <template name="Dokumentationsindkaldelse hotfix"  releaseType="Hotfix">
+    <location value="NLP, Ballerup"/>
+    <subject value="Deadline for documentation for [REL]"/>
+    <body>
+      Remember to fill out any relevant information about packages, change requests or webservices included in the upcoming release.
+
+      See https://wikirubicon.edlund.dk/NLP.Implementation-comments-and-prototype-notes.ashx for a description on what to write in the release notes.
+
+      Also make sure, that any manual steps needed to install or setup the application are described in release notes and/or installation guide.
+
+      Prototype notes folder: https://nordealivogpension.edlund.dk/Coauthor%20Documents/Prototype%20Notes
+      Implementation comments folder: https://nordealivogpension.edlund.dk/Shared%20Documents/Designspecifikationer/30%20Implementation%20comments
+      Installation guides folder:https://nordealivogpension.edlund.dk/Shared%20Documents/Installation%20Guides"
+      Changes after deadline must also be sent to nlp.baselining@edlund.dk.
+    </body>
+    <start value="14:00"/>
+    <duration value="0"/>
+    <reminder value="-2" />
+    <deltaTime value="-1" />
+    <recipients value="nlpgruppen@edlund.dk; Prashant.Patil@lntinfotech.com; Sanket.Shah2@lntinfotech.com" />
+  </template>
+  <template name="Dokumentationsreminder"  releaseType="Common">
+    <location value="NLP, Ballerup"/>
+    <subject value="Reminder: Prepare documentation for [REL]"/>
+    <body>
+      Please remember that an essential part of delivering packages and Change Requests is documenting it. You are not done before all of the below has been completed. [FREEZE]
+
+      Describe manual steps needed to install or setup the application.
+      If you have made changes that require manual action before the application can be installed or set up, describe the in the release notes if it is a one-time change, or in the installation guide if it is a general change to the installation process.
+
+      The installation guide and the prototype notes can be found here: https://nordealivogpension.edlund.dk/Coauthor%20Documents/Release%20Documentation
+
+      Fill out release notes:
+      Remember to fill out any relevant information about packages, change requests or webservices included in the upcoming release.
+      List all specifications that describe the package/CR as well as all specifications describing implementation comments.
+      All documents must be baselined versions (see below)
+
+      See https://wikirubicon.edlund.dk/NLP.Implementation-comments-and-prototype-notes.ashx for a description on what to write in the release notes.
+
+
+      Make sure specifications are baselined:
+      Make sure that all specifications are baselined. If any packages or CRs being delivered, have not been baselined yet, request it immediately via the Baselining requests list (https://nordealivogpension.edlund.dk/Lists/Baselining/AllItems.aspx).
+
+      Write and copy implementation comments to SharePoint:
+      Any changes to specifications during development must be documented as separate version of the specification. These versions must be approved by the NLP package responsible before being delivered.
+
+      Naming convention is: '[Original name] Impl [Package/CR]'. For example:
+      'H02 Underwriting v17 Impl CR12345'.
+
+      The document’s version log must include a line describing t change, starting with 'Impl [Package/CR]'. For example:
+      Impl CR12345: Several fields have been made mandatory.
+
+      Upload the implementation comments to SharePoint:
+      Implementation comments folder (https://nordealivogpension.edlund.dk/Shared%20Documents/Designspecifikationer/30%20Implementation%20comments)
+
+      Also list alle the implementation comment documents in the release notes under the 'Implementation comments' section for the relevant package/CR.
+    </body>
+    <start value="12:00"/>
+    <duration value="0"/>
+    <reminder value="-1" />
+    <deltaTime value="-2" />
+    <recipients value="nlpgruppen@edlund.dk; Prashant.Patil@lntinfotech.com; Sanket.Shah2@lntinfotech.com" />
+  </template>
+</templates>
